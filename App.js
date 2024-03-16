@@ -1,12 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import {NavigationContainer} from "@react-navigation/native"
+import {createNativeStackNavigator} from "@react-navigation/native-stack"
+import OnBoarding from './Apps/screens/OnBoarding';
+import BottomNavigation from './Apps/navigition/BottomNavigation';
 
+
+const Stack = createNativeStackNavigator()
 export default function App() {
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-    <Text className=" text-red-400">Open up App.js to start working on your app!</Text>
-    <StatusBar style="auto" />
-  </View>
+      <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen name='onboard' component={OnBoarding} options={{headerShown:false}} />
+            <Stack.Screen name='Bottom' component={BottomNavigation} options={{headerShown:false}} />
+          </Stack.Navigator>
+      </NavigationContainer>
   );
 }
 

@@ -1,9 +1,13 @@
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
+import { useNavigation } from '@react-navigation/native'
 
 export default function Country({item}) {
+
+    const navigation = useNavigation()
+
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={()=>navigation.navigate("country-details",{item})}>
         <View>
             <Image 
                 source={{uri:item.imageUrl}}

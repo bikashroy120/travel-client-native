@@ -3,6 +3,7 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign } from "@expo/vector-icons";
 import Places from "../components/Home/Places";
+import Recommend from "../components/Home/Recommend";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
                 Places
             </Text>
             <Places />
+            <Recommend />
         </View>
       </View>
     </SafeAreaView>

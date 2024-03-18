@@ -71,6 +71,8 @@ const RecommendScreen = () => {
           title={"Recommendation"}
           onPress={() => navigation.goBack()}
           onPress1={() => navigation.navigate("Search")}
+          top={15}
+          left={0}
         />
       </View>
       <View className="mt-[70px]">

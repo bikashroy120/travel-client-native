@@ -64,6 +64,8 @@ const Hotels = () => {
           title={"NearBy Hotels"}
           onPress={() => navigation.goBack()}
           onPress1={() => navigation.navigate("hotelsSearch")}
+          top={15}
+          left={0}
         />
       </View>
       <View className="mt-[70px]">

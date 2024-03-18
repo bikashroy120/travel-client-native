@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign } from "@expo/vector-icons";
 import Places from "../components/Home/Places";
 import Recommend from "../components/Home/Recommend";
+import Nearby from "../components/Home/Nearby";
 
 export default function Home() {
   return (
@@ -16,11 +17,12 @@ export default function Home() {
           </TouchableOpacity>
         </View>
         <View>
-            <Text className=" font-semibold text-[18px] mt-4 mb-3">
+            <Text className=" font-semibold text-[18px] mt-2 mb-2">
                 Places
             </Text>
             <Places />
             <Recommend />
+            <Nearby />
         </View>
       </View>
     </SafeAreaView>

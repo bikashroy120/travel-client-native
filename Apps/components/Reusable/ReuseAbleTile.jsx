@@ -3,9 +3,9 @@ import React from "react";
 import { AntDesign } from '@expo/vector-icons';
 import { COLORS } from "../../../constants/theme";
 
-const ReuseAbleTile = ({ item }) => {
+const ReuseAbleTile = ({ item,onPress }) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={onPress}>
       <View className=" bg-white p-3 flex-row items-center rounded-xl">
         <Image
           source={{ uri: item.imageUrl }}

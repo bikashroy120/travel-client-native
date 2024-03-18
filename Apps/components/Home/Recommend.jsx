@@ -9,8 +9,10 @@ import React from "react";
 import { FontAwesome } from "@expo/vector-icons";
 import { SIZES } from "../../../constants/theme";
 import ReuseAbleTile from "../Reusable/ReuseAbleTile";
+import { useNavigation } from "@react-navigation/native";
 
 const Recommend = () => {
+  const navigation = useNavigation()
   const recommendations = [
     {
       _id: "64c631650298a05640539adc",
@@ -65,12 +67,12 @@ const Recommend = () => {
   ];
 
   return (
-    <View className=" mt-6">
+    <View className=" mt-5">
       <View className=" flex-row items-center justify-between">
         <Text className=" text-[20px] font-bold text-gray-600">
           Recommendations
         </Text>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigation.navigate("Recommend")}>
           <FontAwesome name="list-ul" size={24} color="black" />
         </TouchableOpacity>
       </View>
@@ -83,7 +85,7 @@ const Recommend = () => {
           contentContainerStyle={{ columnGap: SIZES.medium }}
           renderItem={({ item, index }) => (
             <View>
-              <ReuseAbleTile item={item}/>
+              <ReuseAbleTile item={item} onPress={()=>navigation.navigate("place-details")}/>
             </View>
           )}
         />

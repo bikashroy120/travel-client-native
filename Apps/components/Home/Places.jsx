@@ -1,9 +1,10 @@
 import { View, Text, VirtualizedList } from 'react-native'
 import React from 'react'
 import Country from './Country'
+import { useNavigation } from '@react-navigation/native'
 
 export default function Places() {
-
+  const navigation = useNavigation()
   const countries = [
         {
          _id: "64c62bfc65af9f8c969a8d04",
@@ -64,7 +65,7 @@ export default function Places() {
             getItem={(data,index)=>data[index]}
             renderItem={({item,index})=>(
                 <View className="mr-3">
-                    <Country item={item}/>
+                    <Country item={item} onPress={()=>navigation.navigate("country-details",{item})}/>
                 </View>
             )}
         />

@@ -10,6 +10,7 @@ import Hotels from './Apps/screens/Hotels';
 import HotelSDetails from './Apps/screens/HotelSDetails';
 import RecommendScreen from './Apps/screens/RecommendScreen';
 import PleaseDetails from './Apps/screens/PleaseDetails';
+import HotelsSearch from './Apps/screens/HotelsSearch';
 
 
 const Stack = createNativeStackNavigator()
@@ -25,6 +26,7 @@ export default function App() {
             <Stack.Screen name='country-details' component={CountryDetails} options={{headerShown:false}} />
             <Stack.Screen name='hotels' component={Hotels} options={{headerShown:false}} />
             <Stack.Screen name='hotels-details' component={HotelSDetails} options={{headerShown:false}} />
+            <Stack.Screen name='hotelsSearch' component={HotelsSearch} options={{headerShown:false}} />
           </Stack.Navigator>
       </NavigationContainer>
   );

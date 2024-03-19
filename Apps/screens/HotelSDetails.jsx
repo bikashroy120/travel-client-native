@@ -120,7 +120,7 @@ const HotelSDetails = () => {
                 <Text className=" font-medium text-[15px] text-gray-500">Jun-01 - Dec-01</Text>
             </View>
             <ReusableBtn
-              onPress={() => navigation.navigate("Bottom")}
+              onPress={() => navigation.navigate("select-room")}
               btnText={"Select Room"}
               width={(SIZES.width - 200)}
               backgroundColor={COLORS.green}

@@ -7,6 +7,7 @@ import { COLORS } from "../../constants/theme";
 import Location from "../screens/Location";
 import Profile from "../screens/Profile";
 import Chart from "../screens/Chart";
+import TobTab from "./TobTab";
 
 const Tab = createBottomTabNavigator();
 export default function BottomNavigation() {
@@ -79,7 +80,7 @@ export default function BottomNavigation() {
       />
       <Tab.Screen
         name="Profile"
-        component={Profile}
+        component={TobTab}
         options={{
           tabBarStyle: tabBarStyle,
           tabBarShowLabel: false,

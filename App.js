@@ -12,6 +12,7 @@ import RecommendScreen from './Apps/screens/RecommendScreen';
 import PleaseDetails from './Apps/screens/PleaseDetails';
 import HotelsSearch from './Apps/screens/HotelsSearch';
 import SelectRoom from './Apps/screens/SelectRoom';
+import Settings from './Apps/screens/profile/Settings';
 
 
 const Stack = createNativeStackNavigator()
@@ -29,6 +30,7 @@ export default function App() {
             <Stack.Screen name='hotels-details' component={HotelSDetails} options={{headerShown:false}} />
             <Stack.Screen name='hotelsSearch' component={HotelsSearch} options={{headerShown:false}} />
             <Stack.Screen name='select-room' component={SelectRoom} options={{headerShown:false}} />
+            <Stack.Screen name='setting' component={Settings} options={{headerShown:false}} />
           </Stack.Navigator>
       </NavigationContainer>
   );

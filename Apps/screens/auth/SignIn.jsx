@@ -23,7 +23,7 @@ const SignIn = () => {
   const [show, setShow] = useState(true);
 
   return (
-    <View style={{ flex: 1, padding: 20 }}>
+    <View style={{ flex: 1, padding: 20,paddingTop:50 }}>
       <Formik
         initialValues={{ email: "", password: "" }}
         validationSchema={validationSchema}
@@ -115,7 +115,7 @@ const SignIn = () => {
             <View className=" mt-7">
               <ReusableBtn
                 onPress={handleSubmit}
-                btnText={"Select Room"}
+                btnText={"Log In"}
                 width={"100%"}
                 backgroundColor={COLORS.green}
                 borderColor={COLORS.green}

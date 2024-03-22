@@ -16,7 +16,7 @@ const AuthTab = () => {
           className="w-full h-[250px] "
           style={{ resizeMode: "contain" }}
         />
-        <View style={{height:600}}>
+        <View style={{height:500}}>
           <Tab.Navigator>
             <Tab.Screen name="Login" component={SignIn} />
             <Tab.Screen name="Registration" component={Signup} />

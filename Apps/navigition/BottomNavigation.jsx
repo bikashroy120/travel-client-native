@@ -8,6 +8,7 @@ import Location from "../screens/Location";
 import Profile from "../screens/Profile";
 import Chart from "../screens/Chart";
 import TobTab from "./TobTab";
+import AuthTab from "../screens/auth/AuthTab";
 
 const Tab = createBottomTabNavigator();
 export default function BottomNavigation() {
@@ -64,7 +65,7 @@ export default function BottomNavigation() {
       />
       <Tab.Screen
         name="Chart"
-        component={Chart}
+        component={AuthTab}
         options={{
           tabBarStyle: tabBarStyle,
           tabBarShowLabel: false,
